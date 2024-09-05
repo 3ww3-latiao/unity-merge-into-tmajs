@@ -38,4 +38,10 @@ export declare global {
 
   /** Interval 的 ReturnType. 无需处理Node.Timer */
   declare type IntervalHandle = ReturnType<typeof setInterval>;
+
+  declare const TelegramAuthenticationProviderData: {
+    supported: boolean;
+    version: string;
+    initDataRaw: string;
+  };
 }
