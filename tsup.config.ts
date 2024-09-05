@@ -4,7 +4,9 @@ export default defineConfig({
   entryPoints: ['src/'],
   outDir: 'dist',
   dts: false,
-  sourcemap: true,
   clean: true,
-  format: ['cjs', 'esm'],
+  sourcemap: false,
+  minify: true,
+  format: 'iife',
+  target: 'es6',
 });
